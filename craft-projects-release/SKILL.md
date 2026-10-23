@@ -13,6 +13,7 @@ Never add project names or paths to this file.
 
 - Ask before every push to `main` or `master`, once per project, in chat. Show what will be pushed.
 - Never force-push. Never stash, reset or discard changes.
+- Ask before `ddev stop --all`.
 - A failure stops that project only.
 
 ## 1. Select projects
@@ -100,3 +101,10 @@ Then a closing section with everything that needs attention, only the items that
 ```
 
 Report the file path in chat.
+
+## 6. Stop containers
+
+Last step, after the release log. Ask in chat first: "Alle ddev-Container stoppen
+(`ddev stop --all`)?" Run `ddev stop --all` only after the user confirms. Declined: skip
+and leave the containers running. It stops the containers that `craft-projects-update`
+started with `ddev start --all`.

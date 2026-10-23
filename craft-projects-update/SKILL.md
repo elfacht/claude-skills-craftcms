@@ -17,6 +17,12 @@ Never add project names or paths to this file.
 - Do not create GitHub issues. Do not touch git submodules.
 - Process projects one after another. A failure stops that project only, not the run.
 
+## 0. Start containers
+
+Run `ddev start --all` once, before anything else. It starts every ddev project that is not
+running. `craft-projects-release` stops them again at the end with `ddev stop --all`, after the
+user confirms.
+
 ## 1. Discover projects
 
 - Projects = direct subfolders with a `CLAUDE.md` that contains `## Maintenance`.
