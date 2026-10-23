@@ -60,8 +60,8 @@ Write one Markdown file to `<this folder>/_logs/` (the folder that holds the pro
 `_logs` if missing). The developer imports it into Joplin via a hotfolder, so write a new
 file every run and never edit an old one. Write the log in German.
 
-- File name: `release-YYYY-MM-DD-HHMM.md` (local time at the end of the run, e.g.
-  `release-2026-10-23-1124.md`). No `:` in the file name: macOS and sync tools break on it.
+- File name: `YYYY-MM-DD-HHMM.md` (local time at the end of the run, e.g.
+  `2026-10-23-1124.md`). No `:` in the file name: macOS and sync tools break on it.
   If the file exists, append `-2`, `-3`, ….
 - First line: `# Release YYYY-MM-DD-HH:MM` (same time).
 
