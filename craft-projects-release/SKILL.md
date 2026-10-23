@@ -68,10 +68,7 @@ file every run and never edit an old one. Write the log in German.
 One section per released project, in release order:
 
 ```markdown
-## <project> <new version>
-
-- Release: <release value> · Gepusht: <branches and tag> · Deploy: <deploy value>
-- **Manuelles Deploy nötig**   ← only if `deploy` contains `manual`
+## 📦 <project> — <mark><new version></mark>
 
 <changelog entry>
 
@@ -90,7 +87,9 @@ One section per released project, in release order:
 Then a closing section with everything that needs attention, only the items that apply:
 
 ```markdown
-## Besonderheiten
+---
+
+## ⚠️ Besonderheiten
 
 - Übersprungen, weil nichts ansteht: <projects>.
 - Übersprungen, weil nicht sauber: <projects>.
